@@ -522,8 +522,11 @@ nav a:hover {
 .about-section {
     padding: 8rem 0;
     background: var(--bg);
-    /* Use theme background instead of white */
+    /* Professional Slate Grounding */
+    position: relative;
+    z-index: 1;
 }
+
 
 
 .about-grid {

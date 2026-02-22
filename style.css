@@ -1,25 +1,27 @@
 :root {
     --primary: #F97316;
-    /* Royal Orange (Primary) */
+    /* Royal Orange */
+    --primary-dark: #EA580C;
     --primary-soft: #FFF7ED;
     --secondary: #15803D;
-    /* Royal Green (Secondary) */
+    /* Royal Green */
+    --secondary-dark: #166534;
     --secondary-soft: #F0FDF4;
     --accent: #F59E0B;
-    --bg: #F1F5F9;
-    /* Grounded Professional Slate Base */
-    --surface: rgba(255, 255, 255, 0.95);
+    --bg: #F8FAFC;
+    /* Cleaner Base */
+    --surface: rgba(255, 255, 255, 0.9);
     --text-main: #0F172A;
-    /* Deep Slate/Charcoal for Maximum Contrast */
-    --text-muted: #475569;
-    /* Medium Slate for readable subtext */
-    --border: #E2E8F0;
-    --nav-bg: rgba(241, 245, 249, 0.9);
-    --radius-lg: 24px;
-    --radius-md: 16px;
-    --shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.05), 0 4px 6px -4px rgba(15, 23, 42, 0.05);
-    --shadow-hover: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 10px 10px -5px rgba(15, 23, 42, 0.1);
-    --grid-color: rgba(15, 23, 42, 0.03);
+    /* High Contrast Slate */
+    --text-muted: #64748B;
+    /* Professional Gray */
+    --border: rgba(226, 232, 240, 0.8);
+    --nav-bg: rgba(248, 250, 252, 0.8);
+    --radius-lg: 28px;
+    --radius-md: 18px;
+    --shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.04), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+    --shadow-hover: 0 25px 50px -12px rgba(15, 23, 42, 0.08);
+    --grid-color: rgba(15, 23, 24, 0.04);
 }
 
 
@@ -105,6 +107,7 @@ h3 {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    letter-spacing: -0.01em;
 }
 
 
@@ -473,42 +476,108 @@ nav a:hover {
     background: linear-gradient(135deg, #F59E0B, #D97706);
 }
 
+.app-icon.studysnap {
+    background: linear-gradient(135deg, #6366F1, #4F46E5);
+}
+
 
 .app-icon svg {
     width: 32px;
     height: 32px;
 }
 
-.app-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.app-card p {
-    color: var(--text-muted);
-    margin-bottom: 2rem;
-    flex-grow: 1;
-}
-
 .card-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: auto;
+}
+
+.app-privacy-link {
+    text-align: right;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--border);
+}
+
+.app-privacy-link a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.app-privacy-link a:hover {
+    color: var(--primary);
+}
+
+/* Modal Enhancements */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background: var(--surface);
+    padding: 3rem;
+    border-radius: var(--radius-lg);
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    border: 1px solid var(--border);
+    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.15);
+    transform: scale(0.9) translateY(20px);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.modal.active .modal-content {
+    transform: scale(1) translateY(0);
 }
 
 .btn-store {
     text-decoration: none;
-    background: #111827;
+    background: var(--text-main);
     color: white;
-    padding: 0.75rem 1.25rem;
-    border-radius: 12px;
+    padding: 0.85rem 1.5rem;
+    border-radius: 14px;
     font-size: 0.875rem;
     font-weight: 600;
-    transition: opacity 0.2s;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid transparent;
 }
 
 .btn-store:hover {
-    opacity: 0.9;
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-store.btn-google-play {
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .link-more {

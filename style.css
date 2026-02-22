@@ -1,40 +1,47 @@
 :root {
-    --primary: #15803D;
-    /* Royal Green */
-    --primary-soft: #F0FDF4;
-    --secondary: #F97316;
-    /* Royal Orange */
-    --secondary-soft: #FFF7ED;
+    --primary: #F97316;
+    /* Royal Orange (Primary) */
+    --primary-soft: #FFF7ED;
+    --secondary: #15803D;
+    /* Royal Green (Secondary) */
+    --secondary-soft: #F0FDF4;
     --accent: #F59E0B;
-    --bg: #F9FAFB;
+    --bg: #FFFAF5;
+    /* Tinted white */
     --surface: rgba(255, 255, 255, 0.8);
-    --text-main: #111827;
-    --text-muted: #4B5563;
-    --border: #E5E7EB;
-    --nav-bg: rgba(249, 251, 250, 0.8);
+    --text-main: #064E3B;
+    /* Deep Emerald (Maximum Legibility) */
+    --text-muted: #166534;
+    /* Medium Emerald */
+    --border: #FED7AA;
+    /* Soft Orange Border */
+    --nav-bg: rgba(255, 250, 245, 0.8);
     --radius-lg: 24px;
     --radius-md: 16px;
-    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
-    --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
-    --grid-color: rgba(21, 128, 61, 0.05);
+    --shadow: 0 10px 15px -3px rgba(249, 115, 22, 0.05), 0 4px 6px -4px rgba(249, 115, 22, 0.05);
+    --shadow-hover: 0 20px 25px -5px rgba(249, 115, 22, 0.1), 0 10px 10px -5px rgba(249, 115, 22, 0.1);
+    --grid-color: rgba(249, 115, 22, 0.05);
 }
+
 
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #052e16;
-        /* Deep Greenish Black */
-        --surface: rgba(6, 78, 59, 0.4);
-        --text-main: #F9FAFB;
-        --text-muted: #D1D5DB;
-        --border: rgba(21, 128, 61, 0.2);
-        --nav-bg: rgba(5, 46, 22, 0.8);
-        --primary-soft: rgba(21, 128, 61, 0.2);
-        --secondary-soft: rgba(249, 115, 22, 0.1);
+        --bg: #1C0D02;
+        /* Deep Chocolate/Orange Black */
+        --surface: rgba(43, 21, 5, 0.4);
+        --text-main: #F0FDF4;
+        /* Light Green Text */
+        --text-muted: #BBF7D0;
+        --border: rgba(249, 115, 22, 0.2);
+        --nav-bg: rgba(28, 13, 2, 0.8);
+        --primary-soft: rgba(249, 115, 22, 0.2);
+        --secondary-soft: rgba(21, 128, 61, 0.1);
         --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
         --grid-color: rgba(255, 255, 255, 0.03);
     }
 }
+
 
 
 
@@ -203,8 +210,9 @@ nav a:hover {
     padding: 0.5rem 1rem;
     background: var(--primary-soft);
     color: var(--primary);
-    border: 1px solid rgba(21, 128, 61, 0.15);
+    border: 1px solid rgba(249, 115, 22, 0.2);
     border-radius: 99px;
+
 
     font-size: 0.875rem;
 
@@ -266,13 +274,14 @@ nav a:hover {
 .btn-primary {
     background: var(--primary);
     color: white;
-    box-shadow: 0 4px 14px 0 rgba(21, 128, 61, 0.3);
+    box-shadow: 0 4px 14px 0 rgba(249, 115, 22, 0.3);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px 0 rgba(21, 128, 61, 0.4);
+    box-shadow: 0 6px 20px 0 rgba(249, 115, 22, 0.4);
 }
+
 
 
 /* Magnetic Effect Placeholder (handled by transition) */
@@ -283,14 +292,15 @@ nav a:hover {
 
 .btn-secondary {
     background: white;
-    color: #111827;
-    /* Fixed dark text for legibility on white bg */
-    border: 1px solid var(--border);
+    color: var(--primary);
+    /* Use brand color instead of fixed dark */
+    border: 1px solid var(--primary);
 }
 
 .btn-secondary:hover {
-    background: #f3f4f6;
+    background: var(--primary-soft);
 }
+
 
 
 /* Hero Visual Animation Replacement */

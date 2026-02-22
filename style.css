@@ -1,38 +1,41 @@
 :root {
-    --primary: #4F46E5;
-    --primary-soft: #EEF2FF;
-    --secondary: #8B5CF6;
-    --secondary-soft: #F5F3FF;
-    --accent: #10B981;
+    --primary: #15803D;
+    /* Royal Green */
+    --primary-soft: #F0FDF4;
+    --secondary: #F97316;
+    /* Royal Orange */
+    --secondary-soft: #FFF7ED;
+    --accent: #F59E0B;
     --bg: #F9FAFB;
     --surface: rgba(255, 255, 255, 0.8);
     --text-main: #111827;
     --text-muted: #4B5563;
     --border: #E5E7EB;
-    --nav-bg: rgba(249, 250, 251, 0.8);
+    --nav-bg: rgba(249, 251, 250, 0.8);
     --radius-lg: 24px;
-
     --radius-md: 16px;
     --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
     --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
-    --grid-color: rgba(79, 70, 229, 0.05);
+    --grid-color: rgba(21, 128, 61, 0.05);
 }
+
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #030712;
-        --surface: rgba(17, 24, 39, 0.8);
+        --bg: #052e16;
+        /* Deep Greenish Black */
+        --surface: rgba(6, 78, 59, 0.4);
         --text-main: #F9FAFB;
-        --text-muted: #9CA3AF;
-        --border: #374151;
-        --nav-bg: rgba(3, 7, 18, 0.8);
-        --primary-soft: rgba(79, 70, 229, 0.1);
-
-        --secondary-soft: rgba(139, 92, 246, 0.1);
-        --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        --text-muted: #D1D5DB;
+        --border: rgba(21, 128, 61, 0.2);
+        --nav-bg: rgba(5, 46, 22, 0.8);
+        --primary-soft: rgba(21, 128, 61, 0.2);
+        --secondary-soft: rgba(249, 115, 22, 0.1);
+        --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
         --grid-color: rgba(255, 255, 255, 0.03);
     }
 }
+
 
 
 
@@ -95,6 +98,7 @@ h3 {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 
 nav a {
     text-decoration: none;
@@ -199,8 +203,9 @@ nav a:hover {
     padding: 0.5rem 1rem;
     background: var(--primary-soft);
     color: var(--primary);
-    border: 1px solid rgba(79, 70, 229, 0.2);
+    border: 1px solid rgba(21, 128, 61, 0.15);
     border-radius: 99px;
+
     font-size: 0.875rem;
 
     font-weight: 600;
@@ -220,7 +225,25 @@ nav a:hover {
     -webkit-text-fill-color: transparent;
 }
 
+.brand-definition {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+
+.brand-definition span {
+    color: var(--primary);
+}
+
 .hero p {
+
     font-size: 1.25rem;
     color: var(--text-muted);
     margin-bottom: 2.5rem;
@@ -243,13 +266,14 @@ nav a:hover {
 .btn-primary {
     background: var(--primary);
     color: white;
-    box-shadow: 0 4px 14px 0 rgba(79, 70, 229, 0.3);
+    box-shadow: 0 4px 14px 0 rgba(21, 128, 61, 0.3);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px 0 rgba(79, 70, 229, 0.4);
+    box-shadow: 0 6px 20px 0 rgba(21, 128, 61, 0.4);
 }
+
 
 /* Magnetic Effect Placeholder (handled by transition) */
 .magnetic {
@@ -419,24 +443,25 @@ nav a:hover {
 }
 
 .app-icon.offerlens {
-    background: linear-gradient(135deg, #FF6B6B, #EE5253);
+    background: linear-gradient(135deg, #F97316, #EA580C);
 }
 
 .app-icon.paywise {
-    background: linear-gradient(135deg, #4834D4, #686DE0);
+    background: linear-gradient(135deg, #16A34A, #15803D);
 }
 
 .app-icon.fincalc {
-    background: linear-gradient(135deg, #2ED573, #7BED9F);
+    background: linear-gradient(135deg, #10B981, #059669);
 }
 
 .app-icon.securepass {
-    background: linear-gradient(135deg, #222f3e, #576574);
+    background: linear-gradient(135deg, #064E3B, #065F46);
 }
 
 .app-icon.feminaflow {
-    background: linear-gradient(135deg, #FF9FF3, #FECA57);
+    background: linear-gradient(135deg, #F59E0B, #D97706);
 }
+
 
 .app-icon svg {
     width: 32px;
@@ -659,9 +684,10 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(3, 7, 18, 0.4);
+    background: rgba(5, 46, 22, 0.4);
     backdrop-filter: blur(8px);
     z-index: 2000;
+
     display: flex;
     align-items: center;
     justify-content: center;

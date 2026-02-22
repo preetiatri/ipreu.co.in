@@ -6,41 +6,42 @@
     /* Royal Green (Secondary) */
     --secondary-soft: #F0FDF4;
     --accent: #F59E0B;
-    --bg: #FFFAF5;
-    /* Tinted white */
-    --surface: rgba(255, 255, 255, 0.8);
-    --text-main: #064E3B;
-    /* Deep Emerald (Maximum Legibility) */
-    --text-muted: #166534;
-    /* Medium Emerald */
-    --border: #FED7AA;
-    /* Soft Orange Border */
-    --nav-bg: rgba(255, 250, 245, 0.8);
+    --bg: #F1F5F9;
+    /* Grounded Professional Slate Base */
+    --surface: rgba(255, 255, 255, 0.95);
+    --text-main: #0F172A;
+    /* Deep Slate/Charcoal for Maximum Contrast */
+    --text-muted: #475569;
+    /* Medium Slate for readable subtext */
+    --border: #E2E8F0;
+    --nav-bg: rgba(241, 245, 249, 0.9);
     --radius-lg: 24px;
     --radius-md: 16px;
-    --shadow: 0 10px 15px -3px rgba(249, 115, 22, 0.05), 0 4px 6px -4px rgba(249, 115, 22, 0.05);
-    --shadow-hover: 0 20px 25px -5px rgba(249, 115, 22, 0.1), 0 10px 10px -5px rgba(249, 115, 22, 0.1);
-    --grid-color: rgba(249, 115, 22, 0.05);
+    --shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.05), 0 4px 6px -4px rgba(15, 23, 42, 0.05);
+    --shadow-hover: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 10px 10px -5px rgba(15, 23, 42, 0.1);
+    --grid-color: rgba(15, 23, 42, 0.03);
 }
+
 
 
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #1C0D02;
-        /* Deep Chocolate/Orange Black */
-        --surface: rgba(43, 21, 5, 0.4);
-        --text-main: #F0FDF4;
-        /* Light Green Text */
-        --text-muted: #BBF7D0;
-        --border: rgba(249, 115, 22, 0.2);
-        --nav-bg: rgba(28, 13, 2, 0.8);
-        --primary-soft: rgba(249, 115, 22, 0.2);
+        --bg: #0F172A;
+        /* Solid Deep Slate Black */
+        --surface: rgba(30, 41, 59, 0.5);
+        --text-main: #F8FAFC;
+        /* Ultra Light Gray for dark mode readability */
+        --text-muted: #94A3B8;
+        --border: rgba(255, 255, 255, 0.1);
+        --nav-bg: rgba(15, 23, 42, 0.93);
+        --primary-soft: rgba(249, 115, 22, 0.15);
         --secondary-soft: rgba(21, 128, 61, 0.1);
         --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
-        --grid-color: rgba(255, 255, 255, 0.03);
+        --grid-color: rgba(255, 255, 255, 0.02);
     }
 }
+
 
 
 
@@ -520,8 +521,10 @@ nav a:hover {
 /* About Section */
 .about-section {
     padding: 8rem 0;
-    background: white;
+    background: var(--bg);
+    /* Use theme background instead of white */
 }
+
 
 .about-grid {
     display: grid;
@@ -533,13 +536,17 @@ nav a:hover {
 .about-content h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+    color: var(--text-main);
 }
 
 .about-content p {
     color: var(--text-muted);
     font-size: 1.125rem;
     margin-bottom: 1.5rem;
+    opacity: 0.9;
+    /* Slight softening for long text on slate */
 }
+
 
 .about-stats {
     display: grid;
@@ -576,11 +583,13 @@ nav a:hover {
 }
 
 .support-card {
-    background: white;
+    background: var(--surface);
+    /* Use surface variable */
     padding: 4rem;
     border-radius: var(--radius-lg);
     text-align: center;
     border: 1px solid var(--border);
+
     max-width: 800px;
     margin: 0 auto;
 }
@@ -694,7 +703,9 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(5, 46, 22, 0.4);
+    background: rgba(15, 23, 42, 0.6);
+    /* Use High Contrast Slate for overlay */
+
     backdrop-filter: blur(8px);
     z-index: 2000;
 

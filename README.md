@@ -35,5 +35,31 @@ Once your files are uploaded:
 4. Under **Branch**, select `main` (or `master`) and Click **Save**.
 5. Wait a few minutes. You will see a banner with your URL (e.g., `https://yourusername.github.io/ipreu-website/`).
 
+## How to Reset/Delete and Re-upload
+
+If you have already uploaded files and want to replace them with this new version, here are the two best ways:
+
+### Method 1: The "Clean Slate" (Easiest for Web Users)
+If you find it confusing to delete individual files:
+1. Go to your repository on GitHub.
+2. Click **Settings** (top tab).
+3. Scroll all the way to the bottom to the **"Danger Zone"**.
+4. Click **Delete this repository**.
+5. Type the name of the repo to confirm and delete it.
+6. Create a **New repository** with the same name and follow the "Uploading via Browser" steps above.
+
+### Method 2: Overwriting (GitHub Desktop)
+If you are using **GitHub Desktop**:
+1. Simply copy the new files into your local project folder.
+2. GitHub Desktop will automatically detect the changes (additions, deletions, and modifications).
+3. Type a message like "Updated privacy policies", click **Commit**, and then **Push/Origin**. This will automatically remove any files you deleted locally and update everything else.
+
+### Method 3: Deleting Files Manually (Web Interface)
+1. Go to the file you want to delete.
+2. Click the **...** (three dots) in the top right.
+3. Select **Delete file**.
+4. Commit the change.
+*Note: This is slow if you have many files.*
+
 ---
 Developed by IPREU - Independent & Practical Everyday Utility.

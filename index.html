@@ -4,549 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPREU | Premium Independent Utility Apps</title>
-    <meta name="description"
-        content="Independently developed high-performance tools focused on usability and clarity. Discover OfferLens, PayWise, FinCalc Pro, StudySnap, and more.">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ipreu.co.in/">
-    <meta property="og:title" content="IPREU | Simple Apps Built for Real Everyday Needs">
-    <meta property="og:description"
-        content="Independently developed tools focused on usability, clarity, and performance.">
-    <meta property="og:image" content="https://ipreu.co.in/assets/og-image.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="IPREU | Simple Apps Built for Real Everyday Needs">
-    <meta property="twitter:description"
-        content="Independently developed tools focused on usability, clarity, and performance.">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
-        rel="stylesheet">
+    <title>Privacy Center | IPREU</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="scroll-progress"></div>
-    <div class="grid-bg"></div>
-    <div class="mesh-bg">
-        <div class="mesh-circle circle-1"></div>
-        <div class="mesh-circle circle-2"></div>
-    </div>
-    <header class="navbar">
-
-
-        <div class="container">
-            <div class="logo">
-                <span class="logo-text">I.P.R.E.U.</span>
-            </div>
-
-            <nav>
-                <a href="#apps">Apps</a>
-                <a href="#about">About</a>
-                <a href="#support">Support</a>
-            </nav>
+    <header class="nav-header">
+        <div class="nav-container">
+            <a href="../index.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                Back to Apps
+            </a>
+            <span class="logo-text" style="margin-bottom: 0;">IPREU</span>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container hero-grid">
-                <div class="hero-content">
-                    <span class="badge">Independent Developer</span>
-                    <h1>Simple Apps Built for <span class="gradient-text">Real Everyday Needs</span></h1>
-                    <div class="brand-definition">
-                        <span>Independent</span> &bull;
-                        <span>Practical</span> &bull;
-                        <span>Real-world</span> &bull;
-                        <span>Everyday</span> &bull;
-                        <span>Utility</span>
-                    </div>
-                    <p>Focused on usability, clarity, and performance. No bloat, just pure functionality for your
-                        digital life.</p>
+    <div class="container">
+        <header>
+            <h1>Privacy Hub</h1>
+            <p>Transparency and data protection are at the core of our independent utility tools. Select an application
+                to review its specific privacy commitments.</p>
+        </header>
 
-                    <div class="hero-actions">
-                        <a href="#apps" class="btn btn-primary magnetic">Explore My Apps</a>
-                        <a href="#about" class="btn btn-secondary magnetic">Learn More</a>
-                    </div>
+        <div class="policy-grid">
+            <style>
+                .policy-grid {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 1.5rem;
+                }
 
-                </div>
-                <div class="hero-visual">
-                    <div class="abstract-shape shape-1"></div>
-                    <div class="abstract-shape shape-2"></div>
-                    <div class="glass-card-preview">
-                        <div class="preview-header"></div>
-                        <div class="preview-body">
-                            <div class="preview-line long"></div>
-                            <div class="preview-line med"></div>
-                            <div class="preview-line short"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                .policy-card {
+                    padding: 2rem;
+                    border: 1px solid var(--border);
+                    border-radius: 20px;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                }
 
-        <section id="apps" class="apps-section reveal">
+                .policy-card:hover {
+                    border-color: var(--primary);
+                    background: var(--bg);
+                    transform: translateY(-2px);
+                }
 
-            <div class="container">
-                <div class="section-header">
-                    <h2>Our Applications</h2>
-                    <p>Practical tools designed to simplify your daily digital experience.</p>
-                </div>
-                <div class="apps-grid">
-                    <!-- OfferLens -->
-                    <div class="app-card">
-                        <div class="app-icon offerlens">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
-                                    fill="currentColor" />
-                            </svg>
-                        </div>
-                        <h3>OfferLens</h3>
-                        <p>Discover and analyze the best shopping offers with clarity and precision.</p>
-                        <div class="card-footer">
-                            <a href="https://play.google.com/store/apps/details?id=com.offerlens.app"
-                                class="btn-store btn-google-play magnetic">
-                                <span>Get on Play Store</span>
-                            </a>
-                            <a href="#modal-offerlens" class="link-more">Learn more →</a>
-                        </div>
-                        <div class="app-privacy-link">
-                            <a href="privacy/offerlens.html">Privacy Policy</a>
-                        </div>
+                .policy-card h3 {
+                    color: var(--text-main);
+                    margin-top: 0;
+                }
 
-                    </div>
+                .policy-card p {
+                    margin-bottom: 0;
+                    font-size: 0.95rem;
+                }
+            </style>
 
-                    <!-- PayWise -->
-                    <div class="app-card">
-                        <div class="app-icon paywise">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"
-                                    fill="currentColor" />
-                            </svg>
-                        </div>
-                        <h3>PayWise</h3>
-                        <p>Manage your payments and subscriptions intelligently and securely.</p>
-                        <div class="card-footer">
-                            <a href="https://play.google.com/store/apps/details?id=com.paywise.app"
-                                class="btn-store btn-google-play magnetic">
-                                <span>Get on Play Store</span>
-                            </a>
-                            <a href="#modal-paywise" class="link-more">Learn more →</a>
-                        </div>
-                        <div class="app-privacy-link">
-                            <a href="privacy/paywise.html">Privacy Policy</a>
-                        </div>
-                    </div>
+            <a href="offerlens.html" class="policy-card">
+                <h3>OfferLens</h3>
+                <p>High-precision shopping analytics with a focus on local data processing.</p>
+            </a>
+            <a href="paywise.html" class="policy-card">
+                <h3>PayWise</h3>
+                <p>Secure subscription management with zero-knowledge architecture.</p>
+            </a>
+            <a href="fincalc-pro.html" class="policy-card">
+                <h3>FinCalc Pro</h3>
+                <p>Professional utility tools with no third-party tracking or data sales.</p>
+            </a>
+            <a href="feminaflow.html" class="policy-card">
+                <h3>FeminaFlow</h3>
+                <p>Health tracking designed to keep your most sensitive data exclusively on your device.</p>
+            </a>
+            <a href="secure-password.html" class="policy-card">
+                <h3>SecurePassword</h3>
+                <p>Industry-standard vaulting for your digital life with no cloud-sync risks.</p>
+            </a>
+            <a href="studysnap.html" class="policy-card">
+                <h3>StudySnap</h3>
+                <p>AI-powered educational assistant leveraging global intelligence with locally-scoped data.</p>
+            </a>
+        </div>
 
-                    <!-- FinCalc Pro -->
-                    <div class="app-card">
-                        <div class="app-icon fincalc">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2zm5 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"
-                                    fill="currentColor" />
-                            </svg>
-                        </div>
-                        <h3>FinCalc Pro</h3>
-                        <p>A professional financial calculator for all your complex everyday math.</p>
-                        <div class="card-footer">
-                            <a href="https://play.google.com/store/apps/details?id=com.fincalcpro"
-                                class="btn-store btn-google-play magnetic">
-                                <span>Get on Play Store</span>
-                            </a>
-                            <a href="#modal-fincalc" class="link-more">Learn more →</a>
-                        </div>
-                        <div class="app-privacy-link">
-                            <a href="privacy/fincalc-pro.html">Privacy Policy</a>
-                        </div>
-                    </div>
-
-                    <!-- SecurePassword -->
-                    <div class="app-card">
-                        <div class="app-icon securepass">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C9.24 2 7 4.24 7 7v3H6c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2h-1V7c0-2.76-2.24-5-5-5zm3 8H9V7c0-1.66 1.34-3 3-3s3 1.34 3 3v3z"
-                                    fill="currentColor" />
-                            </svg>
-                        </div>
-                        <h3>SecurePassword</h3>
-                        <p>Keep your digital life safe with encrypted, offline password management.</p>
-                        <div class="card-footer">
-                            <a href="https://play.google.com/store/apps/details?id=com.antigravity.passwordvault.password_vault"
-                                class="btn-store btn-google-play magnetic">
-                                <span>Get on Play Store</span>
-                            </a>
-                            <a href="#modal-securepass" class="link-more">Learn more →</a>
-                        </div>
-                        <div class="app-privacy-link">
-                            <a href="privacy/secure-password.html">Privacy Policy</a>
-                        </div>
-                    </div>
-
-                    <!-- FeminaFlow -->
-                    <div class="app-card">
-                        <div class="app-icon feminaflow">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-                                    fill="currentColor" />
-                            </svg>
-                        </div>
-                        <h3>FeminaFlow</h3>
-                        <p>Approachable and privacy-first tracking for women's health needs.</p>
-                        <div class="card-footer">
-                            <a href="https://play.google.com/store/apps/details?id=com.feminaflow.periodtracker"
-                                class="btn-store btn-google-play magnetic">
-                                <span>Get on Play Store</span>
-                            </a>
-                            <a href="#modal-feminaflow" class="link-more">Learn more →</a>
-                        </div>
-                        <div class="app-privacy-link">
-                            <a href="privacy/feminaflow.html">Privacy Policy</a>
-                        </div>
-                    </div>
-
-                    <!-- StudySnap -->
-                    <div class="app-card">
-                        <div class="app-icon studysnap">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 6L12 18M12 6C12 6 10 3 4 3V15C10 15 12 18 12 18M12 6C12 6 14 3 20 3V15C14 15 12 18 12 18"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M19 18L18 21L21 20L19 18Z" fill="currentColor" />
-                                <path d="M5 21L6 18L3 19L5 21Z" fill="currentColor" />
-                            </svg>
-                        </div>
-                        <h3>StudySnap</h3>
-                        <p>AI-powered educational assistant with OCR and Gemini integration.</p>
-                        <div class="card-footer">
-                            <a href="https://play.google.com/store/apps/details?id=com.example.studyapp"
-                                class="btn-store btn-google-play magnetic">
-                                <span>Get on Play Store</span>
-                            </a>
-                            <a href="#modal-studysnap" class="link-more">Learn more →</a>
-                        </div>
-                        <div class="app-privacy-link">
-                            <a href="privacy/studysnap.html">Privacy Policy</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="about-section reveal">
-
-            <div class="container about-grid">
-                <div class="about-content">
-                    <h2>Crafted with Care by an Independent Developer</h2>
-                    <p>IPREU is more than just a brand; it's a commitment to building software that respects the user.
-                        Every app is independently designed, developed, and maintained with a focus on solving
-                        real-world problems without unnecessary complexity.</p>
-                    <p>Using modern tools and AI-assisted workflows, I bridge the gap between individual creativity and
-                        professional-grade performance.</p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">6+</span>
-                        <span class="stat-label">Active Apps</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Independent</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">24/7</span>
-                        <span class="stat-label">Support</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="roadmap-section container reveal">
-            <div class="section-header">
-                <h2>Product Roadmap</h2>
-                <p>The future of independent utility tools.</p>
-            </div>
-            <div class="roadmap-grid">
-                <div class="roadmap-item">
-                    <span class="roadmap-tag">Q2 2026</span>
-                    <h4>OfferLens AI</h4>
-                    <p>Direct deal comparison using advanced visual recognition logic.</p>
-                </div>
-                <div class="roadmap-item">
-                    <span class="roadmap-tag">Q3 2026</span>
-                    <h4>PayWise Sync</h4>
-                    <p>Secure multidevice synchronization with end-to-end encryption.</p>
-                </div>
-                <div class="roadmap-item">
-                    <span class="roadmap-tag">Q4 2026</span>
-                    <h4>IPREU Core</h4>
-                    <p>A unified dashboard to manage all IPREU applications from one place.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="support" class="support-section reveal">
-
-
-            <div class="container">
-                <div class="support-card glass">
-                    <h2>Need some help?</h2>
-                    <p>Whether you have a bug report, a feature suggestion, or just want to say hi, I'm always happy to
-                        hear from you.</p>
-                    <a href="mailto:support@ipreu.co.in" class="support-email">support@ipreu.co.in</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container footer-content">
+        <footer>
             <p>&copy; 2026 IPREU. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="privacy/index.html">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="mailto:support@ipreu.co.in">Contact</a>
-            </div>
-        </div>
-    </footer>
-    <!-- App Modals -->
-    <div id="modal-offerlens" class="modal">
-        <div class="modal-content">
-            <a href="#" class="close-modal">&times;</a>
-            <div class="app-icon offerlens">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
-                        fill="currentColor" />
-                </svg>
-            </div>
-            <h3>About OfferLens</h3>
-            <p>OfferLens helps you discover the best shopping deals by analyzing complex discount structures. It
-                provides high-precision data on cashback, bank offers, and merchant discounts across major platforms.
-            </p>
-            <div style="margin-top: 2rem; display: flex; gap: 1rem; align-items: center;">
-                <a href="https://play.google.com/store/apps/details?id=com.offerlens.app"
-                    class="btn btn-primary magnetic">Download Play Store</a>
-                <a href="privacy/offerlens.html" style="color: var(--primary); font-weight: 600;">Privacy Policy</a>
-            </div>
-        </div>
+            <p style="margin-top: 1rem; opacity: 0.6;">Crafted for privacy, built for performance.</p>
+        </footer>
     </div>
-
-    <!-- PayWise Modal -->
-    <div id="modal-paywise" class="modal">
-        <div class="modal-content">
-            <a href="#" class="close-modal">&times;</a>
-            <div class="app-icon paywise">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"
-                        fill="currentColor" />
-                </svg>
-            </div>
-            <h3>About PayWise</h3>
-            <p>PayWise is your secure, offline-first companion for managing payments and subscriptions. It uses advanced
-                encryption and on-device machine learning to help you track your financial digital life without
-                compromising your privacy.</p>
-            <div style="margin-top: 2rem; display: flex; gap: 1rem; align-items: center;">
-                <a href="https://play.google.com/store/apps/details?id=com.paywise.app"
-                    class="btn btn-primary magnetic">Download Play Store</a>
-                <a href="privacy/paywise.html" style="color: var(--primary); font-weight: 600;">Privacy Policy</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- FinCalc Pro Modal -->
-    <div id="modal-fincalc" class="modal">
-        <div class="modal-content">
-            <a href="#" class="close-modal">&times;</a>
-            <div class="app-icon fincalc">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2zm5 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"
-                        fill="currentColor" />
-                </svg>
-            </div>
-            <h3>About FinCalc Pro</h3>
-            <p>FinCalc Pro delivers professional-grade financial tools to your pocket. From complex loan calculations to
-                investment planning, it provides high-precision results through an interface optimized for clarity and
-                speed.</p>
-            <div style="margin-top: 2rem; display: flex; gap: 1rem; align-items: center;">
-                <a href="https://play.google.com/store/apps/details?id=com.fincalcpro"
-                    class="btn btn-primary magnetic">Download Play Store</a>
-                <a href="privacy/fincalc-pro.html" style="color: var(--primary); font-weight: 600;">Privacy Policy</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- SecurePassword Modal -->
-    <div id="modal-securepass" class="modal">
-        <div class="modal-content">
-            <a href="#" class="close-modal">&times;</a>
-            <div class="app-icon securepass">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M12 2C9.24 2 7 4.24 7 7v3H6c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2h-1V7c0-2.76-2.24-5-5-5zm3 8H9V7c0-1.66 1.34-3 3-3s3 1.34 3 3v3z"
-                        fill="currentColor" />
-                </svg>
-            </div>
-            <h3>About SecurePassword</h3>
-            <p>Protect your digital identity with SecurePassword. Our zero-knowledge architecture ensures that only you
-                have access to your vault. All encryption happens locally, keeping your passwords safe from cloud-based
-                breaches.</p>
-            <div style="margin-top: 2rem; display: flex; gap: 1rem; align-items: center;">
-                <a href="https://play.google.com/store/apps/details?id=com.antigravity.passwordvault.password_vault"
-                    class="btn btn-primary magnetic">Download Play Store</a>
-                <a href="privacy/secure-password.html" style="color: var(--primary); font-weight: 600;">Privacy
-                    Policy</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- FeminaFlow Modal -->
-    <div id="modal-feminaflow" class="modal">
-        <div class="modal-content">
-            <a href="#" class="close-modal">&times;</a>
-            <div class="app-icon feminaflow">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
-                        fill="currentColor" />
-                </svg>
-            </div>
-            <h3>About FeminaFlow</h3>
-            <p>FeminaFlow provides a respectful, private, and approachable way to track women's health. We believe
-                health data is the most sensitive information there is, which is why FeminaFlow stores everything
-                locally on your device.</p>
-            <div style="margin-top: 2rem; display: flex; gap: 1rem; align-items: center;">
-                <a href="https://play.google.com/store/apps/details?id=com.feminaflow.periodtracker"
-                    class="btn btn-primary magnetic">Download Play Store</a>
-                <a href="privacy/feminaflow.html" style="color: var(--primary); font-weight: 600;">Privacy Policy</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- StudySnap Modal -->
-    <div id="modal-studysnap" class="modal">
-        <div class="modal-content">
-            <a href="#" class="close-modal">&times;</a>
-            <div class="app-icon studysnap">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M12 6L12 18M12 6C12 6 10 3 4 3V15C10 15 12 18 12 18M12 6C12 6 14 3 20 3V15C14 15 12 18 12 18"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M19 18L18 21L21 20L19 18Z" fill="currentColor" />
-                    <path d="M5 21L6 18L3 19L5 21Z" fill="currentColor" />
-                </svg>
-            </div>
-            <h3>About StudySnap</h3>
-            <p>StudySnap is your ultimate AI study companion. It uses OCR to extract text from your photos and PDFs,
-                allowing you to ask questions and get instant help using the powerful Gemini AI model.
-            </p>
-            <div style="margin-top: 2rem; display: flex; gap: 1rem; align-items: center;">
-                <a href="https://play.google.com/store/apps/details?id=com.example.studyapp"
-                    class="btn btn-primary magnetic">Download Play Store</a>
-                <a href="privacy/studysnap.html" style="color: var(--primary); font-weight: 600;">Privacy Policy</a>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // Modal Logic
-        const modals = document.querySelectorAll('.modal');
-        const modalLinks = document.querySelectorAll('a[href^="#modal-"]');
-        const closeModals = document.querySelectorAll('.close-modal');
-
-        modalLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetId = link.getAttribute('href').substring(1);
-                const modal = document.getElementById(targetId);
-                if (modal) {
-                    modal.classList.add('active');
-                    document.body.style.overflow = 'hidden'; // Prevent scroll
-                }
-            });
-        });
-
-        const closeModal = (modal) => {
-            modal.classList.remove('active');
-            document.body.style.overflow = '';
-            // Update URL without jumping
-            history.pushState("", document.title, window.location.pathname + window.location.search);
-        };
-
-        closeModals.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                closeModal(btn.closest('.modal'));
-            });
-        });
-
-        // Close on background click
-        window.addEventListener('click', (e) => {
-            if (e.target.classList.contains('modal')) {
-                closeModal(e.target);
-            }
-        });
-
-        // Close on Escape key
-        window.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                const activeModal = document.querySelector('.modal.active');
-                if (activeModal) closeModal(activeModal);
-            }
-        });
-
-        // Scroll Logic
-        const progress = document.querySelector('.scroll-progress');
-        window.addEventListener('scroll', () => {
-            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (winScroll / height) * 100;
-            if (progress) progress.style.width = scrolled + "%";
-        });
-
-        // Magnetic Buttons Logic
-        const magnetics = document.querySelectorAll('.magnetic');
-        magnetics.forEach(btn => {
-            btn.addEventListener('mousemove', (e) => {
-                const position = btn.getBoundingClientRect();
-                const x = e.clientX - position.left - position.width / 2;
-                const y = e.clientY - position.top - position.height / 2;
-
-                btn.style.transform = `translate(${x * 0.3}px, ${y * 0.5}px)`;
-            });
-
-            btn.addEventListener('mouseout', () => {
-                btn.style.transform = 'translate(0, 0)';
-            });
-        });
-
-        // Scroll Reveal Animation
-        const observerOptions = { threshold: 0.1 };
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.reveal, .app-card, .roadmap-item').forEach(el => {
-            observer.observe(el);
-        });
-    </script>
 </body>
 
 </html>

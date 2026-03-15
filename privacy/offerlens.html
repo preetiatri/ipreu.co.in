@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - OfferLens | IPREU Digital</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <script>
+        const currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (currentTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <header class="nav-header">
+        <div class="nav-container">
+            <a href="index.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                Privacy Hub
+            </a>
+            <nav style="display: flex; align-items: center; gap: 1rem;">
+                <span class="logo-text" style="margin-bottom: 0;">IPREU Digital</span>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <header>
+            <h1>OfferLens Privacy Policy</h1>
+            <p class="last-updated">Last Updated: February 2026</p>
+        </header>
+
+        <section>
+            <h2>1. Introduction</h2>
+            <p>OfferLens is committed to protecting your privacy while helping you find the best value in your shopping. This policy describes our data-light approach to offer discovery.</p>
+
+            <h2>2. Information Collection</h2>
+            <p><strong>Anonymous Usage:</strong> OfferLens does not require an account, email address, or any personal identifying information. You can use all features anonymously.</p>
+            <p><strong>Device Data:</strong> We may access basic device information (e.g., location if you choose to search for local offers) only to provide the service. This data is processed in real-time and not stored on our servers.</p>
+
+            <h2>3. How We Use Information</h2>
+            <p>Your search queries and location data are used solely to provide relevant shopping offers. We do not build user profiles or track your shopping habits over time.</p>
+
+            <h2>4. Third-Party Services</h2>
+            <p>OfferLens displays offers from various merchants. Clicking an offer will take you to the merchant's site, which has its own privacy policy. We do not share your private data with these merchants.</p>
+
+            <h2>5. Data Retention</h2>
+            <p>We do not retain any of your search history or personal preferences on our servers.</p>
+
+            <h2>6. Changes to This Policy</h2>
+            <p>We may update our privacy policy from time to time. We will notify you of any changes by posting the new policy on this page.</p>
+
+            <h2>Contact</h2>
+            <p>Questions? Contact <a href="mailto:support@ipreu.co.in">support@ipreu.co.in</a>.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 IPREU. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        // Custom Cursor Logic
+        const dot = document.querySelector('.cursor-dot');
+        const outline = document.querySelector('.cursor-outline');
+        
+        window.addEventListener('mousemove', (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+            
+            dot.style.transform = `translate(${posX}px, ${posY}px)`;
+            outline.style.transform = `translate(${posX - 20}px, ${posY - 20}px)`;
+        });
+
+        document.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+            el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+        });
+
+        window.addEventListener('mousedown', () => document.body.classList.add('cursor-click'));
+        window.addEventListener('mouseup', () => document.body.classList.remove('cursor-click'));
+
+        const themeToggle = document.getElementById('theme-toggle');
+
+        themeToggle.addEventListener('click', () => {
+            const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+        });
+    </script>
+</body>
+
+</html>

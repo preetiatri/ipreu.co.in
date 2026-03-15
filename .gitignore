@@ -1,0 +1,8 @@
+node_modules/
+playwright-report/
+test-results/
+.gemini/
+.env
+*.log
+dist/
+build/
